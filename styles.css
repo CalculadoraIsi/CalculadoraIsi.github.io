@@ -9,6 +9,46 @@ body {
   width: 60%;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Contenedor */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 6px 8px;
+  }
+
+  .container {
+      width: 98%;
+  }
+
+  /* Para asegurar que la tabla esté centrada */
+  table {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
 h1 {
   color: #4A148C;
 }
@@ -90,3 +130,5 @@ input[type="checkbox"] {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
+
