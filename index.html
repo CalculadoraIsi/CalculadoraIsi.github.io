@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignaturas Electivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Asignaturas Electivas Dpto ISI c/Horas</h1>
+        <p>Horas Electivas Mínimas: Plan 2023 (20 horas)</p>
+        <p>Para contabilizar correctamente las horas, verificar en SYSACAD el Plan y Código de la Materia</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Año</th>
+                    <th>Dictado</th>
+                    <th>Horas</th>
+                    <th>Aprobada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2.023</td>
+                    <td>324</td>
+                    <td>Complejidad y Técnicas de Diseño de Algoritmos</td>
+                    <td>3</td>
+                    <td>1 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>325</td>
+                    <td>Planificación</td>
+                    <td>3</td>
+                    <td>1 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>323</td>
+                    <td>Sistemas de Gestión de Bases de Datos</td>
+                    <td>3</td>
+                    <td>2 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>415</td>
+                    <td>Aspectos Avanzados de Calidad de Software</td>
+                    <td>4</td>
+                    <td>2 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>511</td>
+                    <td>Sistemas de Información Geográficos</td>
+                    <td>4</td>
+                    <td>2 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>414</td>
+                    <td>Análisis de Datos Empresariales</td>
+                    <td>5</td>
+                    <td>1 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>413</td>
+                    <td>Agilidad Avanzada</td>
+                    <td>5</td>
+                    <td>2 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>518</td>
+                    <td>Aspectos Avanzados de Redes de Información</td>
+                    <td>5</td>
+                    <td>2 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>520</td>
+                    <td>Auditoría e Informática Forense</td>
+                    <td>5</td>
+                    <td>2 Cuat.</td>
+                    <td>4</td>
+                    <td><input type="checkbox" class="materia" data-horas="4"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>522</td>
+                    <td>Formación de Emprendedores</td>
+                    <td>5</td>
+                    <td>1 Cuat.</td>
+                    <td>4</td>
+                    <td><input type="checkbox" class="materia" data-horas="4"></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>521</td>
+                    <td>DevOps - Cultura, Herramientas y Procesos</td>
+                    <td>5</td>
+                    <td>2 Cuat.</td>
+                    <td>4</td>
+                    <td><label class="custom-checkbox">
+                        <input type="checkbox" class="materia" data-horas="4">
+                        <span class="checkmark"></span>
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>2.023</td>
+                    <td>523</td>
+                    <td>Fundamentos de Ciberseguridad</td>
+                    <td>5</td>
+                    <td>2 Cuat.</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="materia" data-horas="3"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="totals">
+            <p>Horas Electivas Cubiertas: <span id="horas-cubiertas">0</span></p>
+            <p>Horas Electivas Faltantes: <span id="horas-faltantes">20</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

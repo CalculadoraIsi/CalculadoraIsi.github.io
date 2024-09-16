@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+}
+
+h1 {
+  color: #4A148C;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #8E24AA;
+  color: white;
+}
+
+.totals {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  width: 15px;  /* Ancho del checkbox */
+  height: 15px; /* Altura del checkbox */
+  transform: scale(1.5); /* Aumentar tamaño usando escala */
+  -webkit-transform: scale(1.5); /* Para compatibilidad con navegadores antiguos */
+  margin: 5px; /* Ajuste de espacio alrededor si es necesario */
+}
+
+
+/* Ocultar el checkbox original */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Crear un nuevo checkbox personalizado */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: white; /* Fondo del checkbox */
+  border: 2px solid #8E24AA; /* Color del borde personalizado */
+  border-radius: 4px; /* Borde redondeado, opcional */
+  display: inline-block;
+  position: relative;
+}
+
+/* Cambiar el estilo cuando el checkbox esté marcado */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #8E24AA; /* Cambia el fondo cuando esté marcado */
+  border-color: #8E24AA; /* Cambia el color del borde */
+}
+
+/* Crear el símbolo de check (marca) */
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+/* Estilo del símbolo de check */
+.custom-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
