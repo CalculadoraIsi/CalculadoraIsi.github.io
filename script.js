@@ -17,5 +17,10 @@ function calcularHoras() {
     });
 
     horasCubiertasElem.textContent = horasCubiertas;
-    horasFaltantesElem.textContent = horasMinimas - horasCubiertas;
+    if (horasMinimas - horasCubiertas < 0){
+        horasFaltantesElem.textContent = 0;
+    }else{
+        horasFaltantesElem.textContent = horasMinimas - horasCubiertas;
+    }
+    
 }
