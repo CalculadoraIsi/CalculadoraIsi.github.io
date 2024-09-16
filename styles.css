@@ -9,48 +9,8 @@ body {
   width: 60%;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-th, td {
-  padding: 8px 12px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
-/* Contenedor */
-.container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-/* Estilos responsivos para dispositivos móviles */
-@media (max-width: 768px) {
-  table {
-      font-size: 14px;
-  }
-
-  th, td {
-      padding: 6px 8px;
-  }
-
-  .container {
-      width: 98%;
-  }
-
-  /* Para asegurar que la tabla esté centrada */
-  table {
-      margin-left: auto;
-      margin-right: auto;
-  }
-}
-
 h1 {
-  color: #4A148C;
+  color: #0f0f0f;
 }
 
 table {
@@ -69,7 +29,7 @@ th, td {
 }
 
 th {
-  background-color: #8E24AA;
+  background-color: #0f0f0f;
   color: white;
 }
 
@@ -86,7 +46,6 @@ input[type="checkbox"] {
   margin: 5px; /* Ajuste de espacio alrededor si es necesario */
 }
 
-
 /* Ocultar el checkbox original */
 .custom-checkbox input[type="checkbox"] {
   display: none;
@@ -97,7 +56,7 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   background-color: white; /* Fondo del checkbox */
-  border: 2px solid #8E24AA; /* Color del borde personalizado */
+  border: 2px solid #0f0f0f; /* Color del borde personalizado */
   border-radius: 4px; /* Borde redondeado, opcional */
   display: inline-block;
   position: relative;
@@ -105,8 +64,8 @@ input[type="checkbox"] {
 
 /* Cambiar el estilo cuando el checkbox esté marcado */
 .custom-checkbox input[type="checkbox"]:checked + .checkmark {
-  background-color: #8E24AA; /* Cambia el fondo cuando esté marcado */
-  border-color: #8E24AA; /* Cambia el color del borde */
+  background-color: #0f0f0f; /* Cambia el fondo cuando esté marcado */
+  border-color: #0f0f0f; /* Cambia el color del borde */
 }
 
 /* Crear el símbolo de check (marca) */
@@ -131,4 +90,35 @@ input[type="checkbox"] {
   transform: rotate(45deg);
 }
 
+/* Ajustes para pantallas móviles */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+    display: block;
+  }
 
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  table, th, td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    word-wrap: break-word;
+  }
+
+  input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    transform: scale(1.2);
+  }
+}
