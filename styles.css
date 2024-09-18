@@ -5,8 +5,21 @@ body {
   justify-content: center;
 }
 
+body {
+  background-image:url(fondo.png);
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .container {
   width: 60%;
+  background-color: rgba(212, 209, 209, 0.842);/* Fondo blanco con 70% de transparencia */
+  padding: 20px; /* Añade espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin: auto; /* Centra el contenedor */
 }
 
 h1 {
@@ -29,8 +42,8 @@ th, td {
 }
 
 th {
-  background-color: #3f92e4;
-  color: white;
+  background-color: #18264b;
+  color: rgb(199, 194, 194);
 }
 
 .totals {
@@ -50,8 +63,8 @@ input[type="checkbox"] {
 
 /* Cambiar el estilo cuando el checkbox esté marcado */
 .custom-checkbox input[type="checkbox"]:checked + .checkmark {
-  background-color: #3f92e4; /* Cambia el fondo cuando esté marcado */
-  border-color: #3f92e4; /* Cambia el color del borde */
+  background-color: #18264b; /* Cambia el fondo cuando esté marcado */
+  border-color: #18264b; /* Cambia el color del borde */
 }
 
 /* Crear el símbolo de check (marca) */
@@ -71,7 +84,7 @@ input[type="checkbox"] {
   top: 3px;
   width: 5px;
   height: 10px;
-  border: solid #3f92e4;
+  border: solid #18264b;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -81,6 +94,8 @@ input[type="checkbox"] {
   body {
     margin: 10px;
     display: block;
+    background-position: center top; /* Ajuste para mejorar en móviles */
+    background-size: contain; /* Asegura que la imagen se ajuste sin distorsión */
   }
 
   .container {
@@ -118,8 +133,8 @@ input[type="checkbox"] {
 
   /* Cambiar el estilo cuando el checkbox esté marcado */
 .custom-checkbox input[type="checkbox"]:checked + .checkmark {
-  background-color: #3f92e4; /* Cambia el fondo cuando esté marcado */
-  border-color: #3f92e4; /* Cambia el color del borde */
+  background-color: #18264b; /* Cambia el fondo cuando esté marcado */
+  border-color: #18264b; /* Cambia el color del borde */
 }
 
 /* Crear el símbolo de check (marca) */
@@ -139,7 +154,7 @@ input[type="checkbox"] {
   top: 3px;
   width: 5px;
   height: 10px;
-  border: solid #3f92e4;
+  border: solid #18264b;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
