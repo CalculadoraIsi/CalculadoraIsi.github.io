@@ -96,6 +96,9 @@ input[type="checkbox"] {
     display: block;
     background-position: center top; /* Ajuste para mejorar en móviles */
     background-size: contain; /* Asegura que la imagen se ajuste sin distorsión */
+      background-image:url(fondo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
 
   .container {
